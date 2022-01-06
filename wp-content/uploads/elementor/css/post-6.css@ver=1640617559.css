@@ -41,7 +41,7 @@
  margin:0px 0px -20px 0px;
 }
 .elementor-6 .elementor-element.elementor-element-47e017bb .elementor-heading-title {
- color:#0F142D;
+ color:black;
  font-family:"Maven Pro", Sans-serif;
  font-size:83px;
  font-weight:900;
@@ -67,15 +67,15 @@
  font-family:"Quicksand", Sans-serif;
  font-size:18px;
  font-weight:700;
- fill:#0F142D;
- color:#0F142D;
+ fill:black;
+ color:white;
  background-color:#167F09;
  border-radius:25px 25px 25px 25px;
 }
 .elementor-6 .elementor-element.elementor-element-59d1f0f3 .elementor-button:hover,
 .elementor-6 .elementor-element.elementor-element-59d1f0f3 .elementor-button:focus {
- color:#FFFFFF;
- background-color:#0F142D;
+ color:#167F09;
+ background-color:black;
 }
 .elementor-6 .elementor-element.elementor-element-59d1f0f3 .elementor-button:hover svg,
 .elementor-6 .elementor-element.elementor-element-59d1f0f3 .elementor-button:focus svg {
@@ -92,7 +92,7 @@
  font-family:"Quicksand", Sans-serif;
  font-size:18px;
  font-weight:700;
- background-color:#0F142D;
+ background-color:#167F09;
  border-radius:25px 25px 25px 25px;
 }
 .elementor-6 .elementor-element.elementor-element-1c92ee5 .elementor-button:hover,
@@ -313,7 +313,7 @@
  font-family:"Quicksand", Sans-serif;
  font-size:18px;
  font-weight:700;
- background-color:#0F142D;
+ background-color:black;
  border-radius:25px 25px 25px 25px;
 }
 .elementor-6 .elementor-element.elementor-element-1d56d81 .elementor-button:hover,
@@ -348,7 +348,7 @@
  line-height:1em;
 }
 .elementor-6 .elementor-element.elementor-element-d4dd866 {
- color:#0F142D;
+ color:black;
  font-family:"Quicksand", Sans-serif;
  font-size:17px;
  font-weight:600;
@@ -393,7 +393,7 @@
  margin-bottom:0px;
 }
 .elementor-6 .elementor-element.elementor-element-3f350bb {
- color:#0F142D;
+ color:black;
  font-family:"Quicksand", Sans-serif;
  font-size:17px;
  font-weight:600;
@@ -428,7 +428,7 @@
 }
 .elementor-6 .elementor-element.elementor-element-4081f4c .elementor-button:hover,
 .elementor-6 .elementor-element.elementor-element-4081f4c .elementor-button:focus {
- background-color:#0F142D;
+ background-color:black;
 }
 .elementor-6 .elementor-element.elementor-element-4081f4c > .elementor-widget-container {
  margin:0px 0px 0px 0px;
@@ -448,7 +448,7 @@
  font-family:"Quicksand", Sans-serif;
  font-size:18px;
  font-weight:700;
- background-color:#0F142D;
+ background-color:black;
  border-radius:25px 25px 25px 25px;
 }
 .elementor-6 .elementor-element.elementor-element-21c8509 .elementor-button:hover,
@@ -489,7 +489,7 @@
 }
 .elementor-6 .elementor-element.elementor-element-3376252f:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap,
 .elementor-6 .elementor-element.elementor-element-3376252f > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer {
- background-color:#0F142D;
+ background-color:black;
 }
 .elementor-6 .elementor-element.elementor-element-3376252f > .elementor-element-populated,
 .elementor-6 .elementor-element.elementor-element-3376252f > .elementor-element-populated > .elementor-background-overlay,
@@ -527,7 +527,7 @@
 }
 .elementor-6 .elementor-element.elementor-element-77a58c85:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap,
 .elementor-6 .elementor-element.elementor-element-77a58c85 > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer {
- background-color:#0F142D;
+ background-color:black;
 }
 .elementor-6 .elementor-element.elementor-element-77a58c85 > .elementor-element-populated,
 .elementor-6 .elementor-element.elementor-element-77a58c85 > .elementor-element-populated > .elementor-background-overlay,
@@ -565,7 +565,7 @@
 }
 .elementor-6 .elementor-element.elementor-element-2f59700c:not(.elementor-motion-effects-element-type-background) > .elementor-widget-wrap,
 .elementor-6 .elementor-element.elementor-element-2f59700c > .elementor-widget-wrap > .elementor-motion-effects-container > .elementor-motion-effects-layer {
- background-color:#0F142D;
+ background-color:black;
 }
 .elementor-6 .elementor-element.elementor-element-2f59700c > .elementor-element-populated,
 .elementor-6 .elementor-element.elementor-element-2f59700c > .elementor-element-populated > .elementor-background-overlay,
@@ -2972,15 +2972,15 @@
  font-family:"Quicksand", Sans-serif;
  font-size:18px;
  font-weight:700;
- fill:#0F142D;
- color:#0F142D;
+ fill:black;
+ color:black;
  background-color:#167F09;
  border-radius:25px 25px 25px 25px;
 }
 .elementor-6 .elementor-element.elementor-element-712d893 .elementor-button:hover,
 .elementor-6 .elementor-element.elementor-element-712d893 .elementor-button:focus {
  color:#FFFFFF;
- background-color:#0F142D;
+ background-color:black;
 }
 .elementor-6 .elementor-element.elementor-element-712d893 .elementor-button:hover svg,
 .elementor-6 .elementor-element.elementor-element-712d893 .elementor-button:focus svg {
@@ -3021,7 +3021,7 @@
  font-family:"Quicksand", Sans-serif;
  font-size:18px;
  font-weight:700;
- background-color:#0F142D;
+ background-color:black;
  border-radius:25px 25px 25px 25px;
 }
 .elementor-6 .elementor-element.elementor-element-3eb2a90 .elementor-button:hover,
