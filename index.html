@@ -4294,7 +4294,7 @@ flexibility(document.documentElement);
 															data-widget_type="heading.default">
 															<div class="elementor-widget-container">
 																<a class="twitter-timeline"
-																	href="https://twitter.com/steghold?ref_src=twsrc%5Etfw"></a>
+																	href="https://twitter.com/steghold"data-chrome="nofooter noborders"></a>
 																<script async
 																	src="https://platform.twitter.com/widgets.js"
 																	charset="utf-8"></script>
@@ -4304,30 +4304,6 @@ flexibility(document.documentElement);
 												</div>
 											</div>
 										</section>
-										<script>
-											function clean_tweets(){
-												var tweets = [];
-
-												do{
-													var iframe = document.getElementById('twitter-widget-0');
-													if(iframe == null)
-														break;
-													var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
-
-													tweets = innerDoc.getElementsByClassName("timeline-TweetList-tweet");
-												
-													for (const tweet of tweets) {
-														if(!tweet.innerHTML.includes("#update")){
-															tweet.setAttribute("style", "display: none;"); 
-														}
-													}
-												}while(tweets.length == 0);
-											}
-
-											document.addEventListener('DOMContentLoaded', function() {
-												clean_tweets();
-											}, false);
-										</script>
 									</div>
 								</div>
 
