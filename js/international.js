@@ -1,7 +1,5 @@
 /*
- * Mr. Worldwide
- * 
- * Script per mostrare la versione inglese del sito
+ *  Mr. Worldwide
  */
 
 const supportedLocales = ["en", "it"];
