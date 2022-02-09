@@ -1914,6 +1914,284 @@
 		media='all' />
 	<link rel='stylesheet' id='wp-block-library-css'
 		href='wp-includes/css/dist/block-library/style.min.css@ver=5.8.2.css' media='all' />
+	<style id='global-styles-inline-css'>
+		body {
+			--wp--preset--color--black: #000000;
+			--wp--preset--color--cyan-bluish-gray: #abb8c3;
+			--wp--preset--color--white: #ffffff;
+			--wp--preset--color--pale-pink: #f78da7;
+			--wp--preset--color--vivid-red: #cf2e2e;
+			--wp--preset--color--luminous-vivid-orange: #ff6900;
+			--wp--preset--color--luminous-vivid-amber: #fcb900;
+			--wp--preset--color--light-green-cyan: #7bdcb5;
+			--wp--preset--color--vivid-green-cyan: #00d084;
+			--wp--preset--color--pale-cyan-blue: #8ed1fc;
+			--wp--preset--color--vivid-cyan-blue: #0693e3;
+			--wp--preset--color--vivid-purple: #9b51e0;
+			--wp--preset--color--ast-global-color-0: var(--ast-global-color-0);
+			--wp--preset--color--ast-global-color-1: var(--ast-global-color-1);
+			--wp--preset--color--ast-global-color-2: var(--ast-global-color-2);
+			--wp--preset--color--ast-global-color-3: var(--ast-global-color-3);
+			--wp--preset--color--ast-global-color-4: var(--ast-global-color-4);
+			--wp--preset--color--ast-global-color-5: var(--ast-global-color-5);
+			--wp--preset--color--ast-global-color-6: var(--ast-global-color-6);
+			--wp--preset--color--ast-global-color-7: var(--ast-global-color-7);
+			--wp--preset--color--ast-global-color-8: var(--ast-global-color-8);
+			--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+			--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+			--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+			--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+			--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+			--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+			--wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+			--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+			--wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+			--wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+			--wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+			--wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+			--wp--preset--font-size--small: 13px;
+			--wp--preset--font-size--normal: 16px;
+			--wp--preset--font-size--medium: 20px;
+			--wp--preset--font-size--large: 36px;
+			--wp--preset--font-size--huge: 42px;
+		}
+
+		.has-black-color {
+			color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-color {
+			color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-color {
+			color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-color {
+			color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-color {
+			color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-color {
+			color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-color {
+			color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-color {
+			color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-color {
+			color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-color {
+			color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-color {
+			color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-color {
+			color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-ast-global-color-0-color {
+			color: var(--wp--preset--color--ast-global-color-0) !important;
+		}
+
+		.has-ast-global-color-1-color {
+			color: var(--wp--preset--color--ast-global-color-1) !important;
+		}
+
+		.has-ast-global-color-2-color {
+			color: var(--wp--preset--color--ast-global-color-2) !important;
+		}
+
+		.has-ast-global-color-3-color {
+			color: var(--wp--preset--color--ast-global-color-3) !important;
+		}
+
+		.has-ast-global-color-4-color {
+			color: var(--wp--preset--color--ast-global-color-4) !important;
+		}
+
+		.has-ast-global-color-5-color {
+			color: var(--wp--preset--color--ast-global-color-5) !important;
+		}
+
+		.has-ast-global-color-6-color {
+			color: var(--wp--preset--color--ast-global-color-6) !important;
+		}
+
+		.has-ast-global-color-7-color {
+			color: var(--wp--preset--color--ast-global-color-7) !important;
+		}
+
+		.has-ast-global-color-8-color {
+			color: var(--wp--preset--color--ast-global-color-8) !important;
+		}
+
+		.has-black-background-color {
+			background-color: var(--wp--preset--color--black) !important;
+		}
+
+		.has-cyan-bluish-gray-background-color {
+			background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+		}
+
+		.has-white-background-color {
+			background-color: var(--wp--preset--color--white) !important;
+		}
+
+		.has-pale-pink-background-color {
+			background-color: var(--wp--preset--color--pale-pink) !important;
+		}
+
+		.has-vivid-red-background-color {
+			background-color: var(--wp--preset--color--vivid-red) !important;
+		}
+
+		.has-luminous-vivid-orange-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-amber-background-color {
+			background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+		}
+
+		.has-light-green-cyan-background-color {
+			background-color: var(--wp--preset--color--light-green-cyan) !important;
+		}
+
+		.has-vivid-green-cyan-background-color {
+			background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+		}
+
+		.has-pale-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+		}
+
+		.has-vivid-cyan-blue-background-color {
+			background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+		}
+
+		.has-vivid-purple-background-color {
+			background-color: var(--wp--preset--color--vivid-purple) !important;
+		}
+
+		.has-ast-global-color-0-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-0) !important;
+		}
+
+		.has-ast-global-color-1-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-1) !important;
+		}
+
+		.has-ast-global-color-2-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-2) !important;
+		}
+
+		.has-ast-global-color-3-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-3) !important;
+		}
+
+		.has-ast-global-color-4-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-4) !important;
+		}
+
+		.has-ast-global-color-5-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-5) !important;
+		}
+
+		.has-ast-global-color-6-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-6) !important;
+		}
+
+		.has-ast-global-color-7-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-7) !important;
+		}
+
+		.has-ast-global-color-8-background-color {
+			background-color: var(--wp--preset--color--ast-global-color-8) !important;
+		}
+
+		.has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+			background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+		}
+
+		.has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+			background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+		}
+
+		.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+		}
+
+		.has-luminous-vivid-orange-to-vivid-red-gradient-background {
+			background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+		}
+
+		.has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+			background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+		}
+
+		.has-cool-to-warm-spectrum-gradient-background {
+			background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+		}
+
+		.has-blush-light-purple-gradient-background {
+			background: var(--wp--preset--gradient--blush-light-purple) !important;
+		}
+
+		.has-blush-bordeaux-gradient-background {
+			background: var(--wp--preset--gradient--blush-bordeaux) !important;
+		}
+
+		.has-luminous-dusk-gradient-background {
+			background: var(--wp--preset--gradient--luminous-dusk) !important;
+		}
+
+		.has-pale-ocean-gradient-background {
+			background: var(--wp--preset--gradient--pale-ocean) !important;
+		}
+
+		.has-electric-grass-gradient-background {
+			background: var(--wp--preset--gradient--electric-grass) !important;
+		}
+
+		.has-midnight-gradient-background {
+			background: var(--wp--preset--gradient--midnight) !important;
+		}
+
+		.has-small-font-size {
+			font-size: var(--wp--preset--font-size--small) !important;
+		}
+
+		.has-normal-font-size {
+			font-size: var(--wp--preset--font-size--normal) !important;
+		}
+
+		.has-medium-font-size {
+			font-size: var(--wp--preset--font-size--medium) !important;
+		}
+
+		.has-large-font-size {
+			font-size: var(--wp--preset--font-size--large) !important;
+		}
+
+		.has-huge-font-size {
+			font-size: var(--wp--preset--font-size--huge) !important;
+		}
+	</style>
 	<link rel='stylesheet' id='eae-css-css'
 		href='wp-content/plugins/addon-elements-for-elementor-page-builder/assets/css/eae.min.css@ver=1.0.css'
 		media='all' />
@@ -1930,8 +2208,28 @@
 		href='wp-content/uploads/essential-addons-elementor/734e5f942.min.css@ver=1641462183.css' media='all' />
 	<link rel='stylesheet' id='elementor-icons-css'
 		href='wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css@ver=5.12.0.css' media='all' />
+	<style id='elementor-icons-inline-css'>
+		.elementor-add-new-section .elementor-add-templately-promo-button {
+			background-color: #5d4fff;
+			background-image: url(wp-content/plugins/essential-addons-for-elementor-lite/assets/admin/images/templately/logo-icon.svg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			margin-left: 5px;
+			position: relative;
+			bottom: 5px;
+		}
+	</style>
 	<link rel='stylesheet' id='elementor-frontend-css'
 		href='wp-content/plugins/elementor/assets/css/frontend.min.css@ver=3.4.5.css' media='all' />
+	<style id='elementor-frontend-inline-css'>
+		@font-face {
+			font-family: eicons;
+			src: url(wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot@5.10.0);
+			src: url(wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot@5.10.0) format("embedded-opentype"), url(wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2@5.10.0) format("woff2"), url(wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff@5.10.0) format("woff"), url(wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf@5.10.0) format("truetype"), url(wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg@5.10.0) format("svg");
+			font-weight: 400;
+			font-style: normal
+		}
+	</style>
 	<link rel='stylesheet' id='elementor-post-5-css'
 		href='wp-content/uploads/elementor/css/post-5.css@ver=1634054640.css' media='all' />
 	<link rel='stylesheet' id='elementor-global-css'
@@ -3142,6 +3440,10 @@ Questo la rende la soluzione ideale sulla quale basare l'infrastruttura di stegh
 		id='elementor-waypoints-js'></script>
 	<script src='wp-includes/js/jquery/ui/core.min.js@ver=1.12.1' id='jquery-ui-core-js'></script>
 	<script src='wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js@ver=5.3.6' id='swiper-js'></script>
+	<script src='wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js@ver=3.4.5' id='share-link-js'>
+	</script>
+	<script src='wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js@ver=4.8.1' id='elementor-dialog-js'>
+	</script>
 	<script id='elementor-frontend-js-before'>
 		var elementorFrontendConfig = {
 			"environmentMode": {
@@ -3255,6 +3557,114 @@ Questo la rende la soluzione ideale sulla quale basare l'infrastruttura di stegh
 		};
 	</script>
 	<script src='wp-content/plugins/elementor/assets/js/frontend.min.js@ver=3.4.5' id='elementor-frontend-js'></script>
+	<script id='elementor-frontend-js-after'>
+		! function (t) {
+			var e = function (t, e, a) {
+				var s;
+				return function () {
+					var i = this,
+						l = arguments,
+						n = function () {
+							s = null, a || t.apply(i, l)
+						},
+						o = a && !s;
+					clearTimeout(s), s = setTimeout(n, e), o && t.apply(i, l)
+				}
+			};
+			t(window).on("elementor/frontend/init", function () {
+				var t, a = elementorModules.frontend.handlers.Base;
+				t = a.extend({
+					bindEvents: function () {
+						this.run()
+					},
+					getDefaultSettings: function () {
+						return {
+							direction: "alternate",
+							easing: "easeInOutSine",
+							loop: !0,
+							targets: this.findElement(".elementor-widget-container").get(0)
+						}
+					},
+					onElementChange: e(function (t) {
+						-1 !== t.indexOf("ha_floating") && (this.anime && this.anime.restart(), this
+							.run())
+					}, 400),
+					getFxVal: function (t) {
+						return this.getElementSettings("ha_floating_fx_" + t)
+					},
+					run: function () {
+						var t = this.getDefaultSettings();
+						this.getFxVal("translate_toggle") && ((this.getFxVal("translate_x.size") || this
+							.getFxVal("translate_x.sizes.to")) && (t.translateX = {
+							value: [this.getFxVal("translate_x.sizes.from") || 0, this
+								.getFxVal("translate_x.size") || this.getFxVal(
+									"translate_x.sizes.to")
+							],
+							duration: this.getFxVal("translate_duration.size"),
+							delay: this.getFxVal("translate_delay.size") || 0
+						}), (this.getFxVal("translate_y.size") || this.getFxVal(
+							"translate_y.sizes.to")) && (t.translateY = {
+							value: [this.getFxVal("translate_y.sizes.from") || 0, this
+								.getFxVal("translate_y.size") || this.getFxVal(
+									"translate_y.sizes.to")
+							],
+							duration: this.getFxVal("translate_duration.size"),
+							delay: this.getFxVal("translate_delay.size") || 0
+						})), this.getFxVal("rotate_toggle") && ((this.getFxVal("rotate_x.size") ||
+							this.getFxVal("rotate_x.sizes.to")) && (t.rotateX = {
+							value: [this.getFxVal("rotate_x.sizes.from") || 0, this.getFxVal(
+								"rotate_x.size") || this.getFxVal(
+								"rotate_x.sizes.to")],
+							duration: this.getFxVal("rotate_duration.size"),
+							delay: this.getFxVal("rotate_delay.size") || 0
+						}), (this.getFxVal("rotate_y.size") || this.getFxVal(
+							"rotate_y.sizes.to")) && (t.rotateY = {
+							value: [this.getFxVal("rotate_y.sizes.from") || 0, this.getFxVal(
+								"rotate_y.size") || this.getFxVal(
+								"rotate_y.sizes.to")],
+							duration: this.getFxVal("rotate_duration.size"),
+							delay: this.getFxVal("rotate_delay.size") || 0
+						}), (this.getFxVal("rotate_z.size") || this.getFxVal(
+							"rotate_z.sizes.to")) && (t.rotateZ = {
+							value: [this.getFxVal("rotate_z.sizes.from") || 0, this.getFxVal(
+								"rotate_z.size") || this.getFxVal(
+								"rotate_z.sizes.to")],
+							duration: this.getFxVal("rotate_duration.size"),
+							delay: this.getFxVal("rotate_delay.size") || 0
+						})), this.getFxVal("scale_toggle") && ((this.getFxVal("scale_x.size") ||
+							this.getFxVal("scale_x.sizes.to")) && (t.scaleX = {
+							value: [this.getFxVal("scale_x.sizes.from") || 0, this.getFxVal(
+								"scale_x.size") || this.getFxVal("scale_x.sizes.to")],
+							duration: this.getFxVal("scale_duration.size"),
+							delay: this.getFxVal("scale_delay.size") || 0
+						}), (this.getFxVal("scale_y.size") || this.getFxVal(
+							"scale_y.sizes.to")) && (t.scaleY = {
+							value: [this.getFxVal("scale_y.sizes.from") || 0, this.getFxVal(
+								"scale_y.size") || this.getFxVal("scale_y.sizes.to")],
+							duration: this.getFxVal("scale_duration.size"),
+							delay: this.getFxVal("scale_delay.size") || 0
+						})), (this.getFxVal("translate_toggle") || this.getFxVal(
+							"rotate_toggle") || this.getFxVal("scale_toggle")) && (this.findElement(
+								".elementor-widget-container").css("will-change", "transform"), this
+							.anime = window.anime && window.anime(t))
+					}
+				}), elementorFrontend.hooks.addAction("frontend/element_ready/widget", function (e) {
+					elementorFrontend.elementsHandler.addHandler(t, {
+						$element: e
+					})
+				})
+			})
+		}(jQuery);
+	</script>
+	<script src='wp-content/plugins/elementor/assets/js/preloaded-modules.min.js@ver=3.4.5' id='preloaded-modules-js'>
+	</script>
+	<script>
+		/(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window
+			.addEventListener("hashchange", function () {
+				var t, e = location.hash.substring(1);
+				/^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i
+					.test(t.tagName) || (t.tabIndex = -1), t.focus())
+			}, !1);
 	</script>
 	<script src="js/international.js"></script>
 </body>
