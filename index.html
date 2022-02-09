@@ -50,8 +50,13 @@
 			color: #167f09;
 		}
 
+
 		.site-logo-img img {
 			transition: all 0.2s linear;
+		}
+
+		.ast-page-builder-template .hentry {
+			margin: 0;
 		}
 
 		.ast-page-builder-template .site-content>.ast-container {
@@ -64,9 +69,34 @@
 			margin: 0;
 		}
 
+		.ast-page-builder-template .no-results {
+			text-align: center;
+			margin: 4em auto;
+		}
+
+		.ast-page-builder-template .ast-pagination {
+			padding: 2em;
+		}
+
+		.ast-page-builder-template .entry-header.ast-no-title.ast-no-thumbnail {
+			margin-top: 0;
+		}
+
 		.ast-page-builder-template .entry-header.ast-header-without-markup {
 			margin-top: 0;
 			margin-bottom: 0;
+		}
+
+		.ast-page-builder-template .entry-header.ast-no-title.ast-no-meta {
+			margin-bottom: 0;
+		}
+
+		.ast-page-builder-template.single .post-navigation {
+			padding-bottom: 2em;
+		}
+
+		.ast-page-builder-template.single-post .site-content>.ast-container {
+			max-width: 100%;
 		}
 
 		.ast-page-builder-template.single-post .site-content>.ast-container {
@@ -74,6 +104,14 @@
 		}
 
 		.ast-page-builder-template .entry-header {
+			margin-top: 4em;
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.ast-page-builder-template .ast-archive-description {
 			margin-top: 4em;
 			margin-left: auto;
 			margin-right: auto;
@@ -109,9 +147,15 @@
 		}
 
 		@media (min-width:1200px) {
+			.wp-block-group .has-background {
+				padding: 20px;
+			}
+		}
 
-			.ast-no-sidebar.ast-separate-container .entry-content,
-			.ast-no-sidebar.ast-separate-container .entry-content {
+		@media (min-width:1200px) {
+
+			.ast-no-sidebar.ast-separate-container .entry-content .wp-block-group.alignwide,
+			.ast-no-sidebar.ast-separate-container .entry-content .wp-block-cover.alignwide {
 				margin-left: -20px;
 				margin-right: -20px;
 				padding-left: 20px;
@@ -119,7 +163,7 @@
 			}
 
 			.ast-no-sidebar.ast-separate-container .entry-content .wp-block-cover.alignfull,
-			.ast-no-sidebar.ast-separate-container .entry-content {
+			.ast-no-sidebar.ast-separate-container .entry-content .wp-block-group.alignfull {
 				margin-left: -6.67em;
 				margin-right: -6.67em;
 				padding-left: 6.67em;
@@ -162,6 +206,13 @@
 			margin-bottom: 1.6em;
 		}
 
+		.wp-block-group {
+			padding-top: 4em;
+			padding-bottom: 4em;
+		}
+
+		.wp-block-group__inner-container .wp-block-columns:last-child,
+		.wp-block-group__inner-container :last-child,
 		.wp-block-table table {
 			margin-bottom: 0;
 		}
@@ -174,7 +225,8 @@
 			padding: 5px 0;
 		}
 
-		.has-text-align-center{
+		.wp-block-group .wp-block-group .has-text-align-center,
+		.wp-block-group .wp-block-column .has-text-align-center {
 			max-width: 100%;
 		}
 
@@ -185,18 +237,31 @@
 		@media (min-width:1200px) {
 
 			.wp-block-cover__inner-container,
-			.alignwide,
-			.alignfull{
+			.alignwide .wp-block-group__inner-container,
+			.alignfull .wp-block-group__inner-container {
 				max-width: 1200px;
 				margin: 0 auto;
 			}
 
+			.wp-block-group.alignnone,
+			.wp-block-group.aligncenter,
+			.wp-block-group.alignleft,
+			.wp-block-group.alignright,
+			.wp-block-group.alignwide,
 			.wp-block-columns.alignwide {
 				margin: 2rem 0 1rem 0;
 			}
 		}
 
 		@media (max-width:1200px) {
+			.wp-block-group {
+				padding: 3em;
+			}
+
+			.wp-block-group .wp-block-group {
+				padding: 1.5em;
+			}
+
 			.wp-block-columns,
 			.wp-block-column {
 				margin: 1rem 0;
@@ -204,7 +269,7 @@
 		}
 
 		@media (min-width:921px) {
-			.wp-block-columns {
+			.wp-block-columns .wp-block-group {
 				padding: 2em;
 			}
 		}
@@ -221,6 +286,7 @@
 				padding: 2em 0;
 			}
 
+			.wp-block-group,
 			.wp-block-cover {
 				padding: 2em;
 			}
@@ -1102,8 +1168,31 @@
 			}
 		}
 
-		svg {
+		.ast-builder-social-element:hover {
+			color: #0274be;
+		}
+
+		.ast-social-stack-desktop .ast-builder-social-element,
+		.ast-social-stack-tablet .ast-builder-social-element,
+		.ast-social-stack-mobile .ast-builder-social-element {
+			margin-top: 6px;
+			margin-bottom: 6px;
+		}
+
+		.ast-social-color-type-official .ast-builder-social-element,
+		.ast-social-color-type-official .social-item-label {
+			color: var(--color);
+			background-color: var(--background-color);
+		}
+
+		.header-social-inner-wrap.ast-social-color-type-official .ast-builder-social-element svg,
+		.footer-social-inner-wrap.ast-social-color-type-official .ast-builder-social-element svg {
 			fill: currentColor;
+		}
+
+		.social-show-label-true .ast-builder-social-element {
+			width: auto;
+			padding: 0 0.4em;
 		}
 
 		[data-section^="section-fb-social-icons-"] .footer-social-inner-wrap {
@@ -1112,6 +1201,61 @@
 
 		.ast-footer-social-wrap {
 			width: 100%;
+		}
+
+		.ast-footer-social-wrap .ast-builder-social-element:first-child {
+			margin-left: 0;
+		}
+
+		.ast-footer-social-wrap .ast-builder-social-element:last-child {
+			margin-right: 0;
+		}
+
+		.ast-header-social-wrap .ast-builder-social-element:first-child {
+			margin-left: 0;
+		}
+
+		.ast-header-social-wrap .ast-builder-social-element:last-child {
+			margin-right: 0;
+		}
+
+		.ast-builder-social-element {
+			line-height: 1;
+			color: #3a3a3a;
+			background: transparent;
+			vertical-align: middle;
+			transition: all 0.01s;
+			margin-left: 6px;
+			margin-right: 6px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.ast-builder-social-element {
+			line-height: 1;
+			color: #3a3a3a;
+			background: transparent;
+			vertical-align: middle;
+			transition: all 0.01s;
+			margin-left: 6px;
+			margin-right: 6px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.ast-builder-social-element .social-item-label {
+			padding-left: 6px;
+		}
+
+		.ast-footer-social-1-wrap .ast-builder-social-element {
+			margin-left: 18px;
+			margin-right: 18px;
+			padding: 0;
+		}
+
+		.ast-footer-social-1-wrap .ast-builder-social-element svg {
+			width: 19px;
+			height: 19px;
 		}
 
 		.ast-footer-social-1-wrap .ast-social-icon-image-wrap {
@@ -1360,17 +1504,20 @@
 
 		.ast-separate-container .ast-article-post {
 			background-color: var(--ast-global-color-5);
+			;
 		}
 
 		@media (max-width:921px) {
 			.ast-separate-container .ast-article-post {
 				background-color: var(--ast-global-color-5);
+				;
 			}
 		}
 
 		@media (max-width:544px) {
 			.ast-separate-container .ast-article-post {
 				background-color: var(--ast-global-color-5);
+				;
 			}
 		}
 
@@ -1412,6 +1559,7 @@
 		}
 
 		@media (max-width:544px) {
+
 			.ast-separate-container .ast-article-single:not(.ast-related-post),
 			.ast-separate-container .comments-area .comment-respond,
 			.ast-separate-container .comments-area .ast-comment-list li,
@@ -1547,9 +1695,15 @@
 			padding-left: 40px;
 		}
 
+		.ast-mobile-popup-drawer.active .ast-mobile-popup-inner {
+			background-color: #ffffff;
+			;
+		}
+
 		.ast-mobile-header-wrap .ast-mobile-header-content,
 		.ast-desktop-header-content {
 			background-color: #ffffff;
+			;
 		}
 
 		.ast-mobile-popup-content>*,
@@ -1566,6 +1720,10 @@
 
 		.content-align-flex-start .main-header-menu {
 			text-align: left;
+		}
+
+		.ast-mobile-popup-drawer.active .menu-toggle-close {
+			color: #3a3a3a;
 		}
 
 		.ast-mobile-header-wrap .ast-primary-header-bar,
@@ -1602,7 +1760,9 @@
 
 		.ast-primary-header-bar {
 			background-color: white;
+			;
 			background-image: none;
+			;
 		}
 
 		.ast-primary-header-bar {
@@ -1715,7 +1875,9 @@
 			.ast-builder-menu-mobile .main-navigation .main-header-menu,
 			.ast-builder-menu-mobile .main-navigation .main-header-menu .sub-menu {
 				background-color: white;
+				;
 				background-image: none;
+				;
 			}
 		}
 
@@ -1733,6 +1895,18 @@
 			.ast-header-break-point .ast-builder-menu-mobile .main-navigation {
 				display: block;
 			}
+		}
+
+		:root {
+			--e-global-color-astglobalcolor0: #0170B9;
+			--e-global-color-astglobalcolor1: #3a3a3a;
+			--e-global-color-astglobalcolor2: #3a3a3a;
+			--e-global-color-astglobalcolor3: #4B4F58;
+			--e-global-color-astglobalcolor4: #F5F5F5;
+			--e-global-color-astglobalcolor5: #FFFFFF;
+			--e-global-color-astglobalcolor6: #F2F5F7;
+			--e-global-color-astglobalcolor7: #424242;
+			--e-global-color-astglobalcolor8: #000000;
 		}
 	</style>
 	<link rel='stylesheet' id='astra-google-fonts-css'
@@ -2856,10 +3030,21 @@ Questo la rende la soluzione ideale sulla quale basare l'infrastruttura di stegh
 										</section>
 									</div>
 								</div>
+
+
+
 							</div><!-- .entry-content .clear -->
+
+
+
 						</article><!-- #post-## -->
+
 					</main><!-- #main -->
+
+
 				</div><!-- #primary -->
+
+
 			</div> <!-- ast-container -->
 		</div><!-- #content -->
 		<footer class="site-footer" id="colophon" itemtype="https://schema.org/WPFooter" itemscope="itemscope"
