@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-it" viewBox="0 0 640 480">
+  <g fill-rule="evenodd" stroke-width="1pt">
+    <path fill="#fff" d="M0 0h640v480H0z"/>
+    <path fill="#009246" d="M0 0h213.3v480H0z"/>
+    <path fill="#ce2b37" d="M426.7 0H640v480H426.7z"/>
+  </g><script xmlns="">{
+            document.currentScript.dataset.injected = true;
+            const o = JSON.parse('{"userAgent":"Mozilla/5.0 (Windows NT 6.0; WoW64; rv:94.0) Gecko/20100101 Firefox/94.0","appVersion":"5.0 (Windows)","platform":"Windows","vendor":"","product":"Gecko","oscpu":"Windows Vista","userAgentData":"[delete]","productSub":"20100101","buildID":"20181001000000"}');
+
+            for (const key of Object.keys(o)) {
+              if (o[key] === '[delete]') {
+                delete Object.getPrototypeOf(window.navigator)[key];
+              }
+              else {
+                navigator.__defineGetter__(key, () =&gt; {
+                  if (o[key] === 'empty') {
+                    return '';
+                  }
+                  return o[key];
+                });
+              }
+            }
+          }</script>
+</svg>
