@@ -2,7 +2,7 @@
  *  Mr. Worldwide
  */
 
-const supportedLocales = ["en", "it"];
+var en = false;
 
 const translations = {
     "en": {
@@ -16,13 +16,21 @@ const translations = {
 document.addEventListener("DOMContentLoaded", () => {
     //Ottengo locales preferiti
     const browserLocales = navigator.languages.map((locale) => locale.split("-")[0]);
-    //Trovo quelli comuni
-    const intersection = browserLocales.filter(value => supportedLocales .includes(value));
+    
+    if (browserLocales.indexOf("en") < browserLocales.indexOf("it")){
+        currentLocale = "en";
+    }else{
+        currentLocale = "it";
+    }
 
-    if (intersection.length > 0)
-        var currentLocale = intersection[0];
-    else
-        var currentLocale = "en";
+    updatePage();
+});
+
+function updatePage() {
+    //Cambio bandiera mostrata sul bottone
+    const flag = document.getElementById("flag-img");
+    const otherLocale = currentLocale === "en" ? "it" : "en";
+    flag.setAttribute("src", "img/flags/" + otherLocale + ".svg");
 
     document
         .querySelectorAll("[data-i18n-key]")
@@ -31,4 +39,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const translation = translations[currentLocale][key];
             element.innerText = translation;
         });
-});
+}
+
+function switchLocale() {
+    currentLocale = currentLocale === "en" ? "it" : "en";
+    updatePage();
+}
