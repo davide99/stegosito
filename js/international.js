@@ -109,6 +109,7 @@ function updatePage() {
             const translation = translations[currentLocale][key];
             element.innerText = translation;
         });
+    document.getElementById("lightpaper_link").setAttribute("href", "files/lightpaper_" + currentLocale + ".pdf");
 }
 
 function switchLocale() {
