@@ -3,6 +3,7 @@
  */
 
 var currentLocale;
+let basePath;
 
 const translations = {
     "en": {
@@ -47,11 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
     //Ottengo locales preferiti
     const browserLocales = navigator.languages.map((locale) => locale.split("-")[0]);
     
-    if (browserLocales.indexOf("en") < browserLocales.indexOf("it")){
+    if (browserLocales.indexOf("en") < browserLocales.indexOf("it")) {
         currentLocale = "en";
-    }else{
+    } else {
         currentLocale = "it";
     }
+
+    const numOfSlash = (window.location.pathname.match(/\//g) || []).length;
+    const dirs = numOfSlash - 1;
+    basePath = '../'.repeat(dirs);
 
     updatePage();
 });
@@ -60,7 +65,7 @@ function updatePage() {
     //Cambio bandiera mostrata sul bottone
     const flag = document.getElementById("flag-img");
     const otherLocale = currentLocale === "en" ? "it" : "en";
-    flag.setAttribute("src", "img/flags/" + otherLocale + ".svg");
+    flag.setAttribute("src", basePath + "img/flags/" + otherLocale + ".svg");
 
     document
         .querySelectorAll("[data-i18n-key]")
